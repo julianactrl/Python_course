@@ -1,6 +1,6 @@
 import csv
 
-def parse_csv(nombre_archivo, select = None, types = None, has_headers = None):
+def parse_csv(nombre_archivo, select = None, types = None, has_headers = False):
     '''
     Parsea un archivo CSV en una lista de registros.
     Se puede seleccionar sólo un subconjunto de las columnas, determinando el parámetro select, que debe ser una lista de nombres de las columnas a considerar.
@@ -51,5 +51,5 @@ def parse_csv(nombre_archivo, select = None, types = None, has_headers = None):
 
 # camion = parse_csv('../Data/camion.csv', select=['nombre', 'cajones', 'precio'],  types=[str, int, float], has_headers = True)
 
-# precios = parse_csv('../Data/precios.csv', types=[str,float], has_headers=False)
+# precios = parse_csv('../Data/precios.csv', types=[str,float], has_headers= False)
 # print(precios)
